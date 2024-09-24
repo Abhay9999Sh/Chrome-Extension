@@ -1,16 +1,22 @@
 {
     "manifest_version": 3,
-    "name": "Tab Title Fetcher",
-    "description": "Gets the title of the current tab and shows it in the popup.",
+    "name": "LinkedIn Profile Scraper",
     "version": "1.0",
-    "permissions": ["tabs"],
+    "permissions": [
+      "tabs", 
+      "activeTab",
+      "scripting"
+    ],
+    "host_permissions": [
+      "http://localhost:3000/*" 
+    ],
     "action": {
       "default_popup": "index.html",
       "default_icon": {
-      "16": "images/tab-icon.jpg",
-      "48": "images/tab-icon.jpg",
-      "128": "images/tab-icon.jpg"
-     }
+        "16": "images/tab-icon.jpg",
+        "48": "images/tab-icon.jpg",
+        "128": "images/tab-icon.jpg"
+      }
     }
-}
+  }
   
